@@ -79,14 +79,14 @@
           if (!empty($selectedProducts)){
             $totalPrice = $username->getTotalSpent();
             if ($totalPrice > $username->getSpendLimit()) {
-              echo "You have exceeded your spending limit!<br>";
               echo "Total price: $$totalPrice<br>";
               echo "Spending limit: $" . $username->getSpendLimit() . "<br>";
+              echo "User has exceeded the spending limt.<br>";
             } else {
               foreach ($selectedProducts as $product) echo $product . "<br>";
               if ($totalPrice != null) echo "<br>Total price: $" . round($totalPrice, 2) . "<br>";
-              echo "Spending limit: $" . round($username->getSpendLimit(), 2) . "<br>";
-              echo "Remaining balance: $" . round($username->getSpendLimit() - $totalPrice, 2);
+              echo "User's spending limit: $" . round($username->getSpendLimit(), 2) . "<br>";
+              echo "User's remaining balance: $" . round($username->getSpendLimit() - $totalPrice, 2);
             }
           }
         ?>
