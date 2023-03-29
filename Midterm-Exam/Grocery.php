@@ -6,11 +6,6 @@
       protected float $price;
       protected float $weight;
 
-      /**
-       * @param string $name
-       * @param float $price
-       * @param float $weight
-       */
       public function __construct(string $name, float $price, float $weight) {
         $this->name = $name;
         $this->price = $price;

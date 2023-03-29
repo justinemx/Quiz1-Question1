@@ -17,23 +17,16 @@
   );
 
   $username = null;
-  $totalPrice = null;
-
-  $selectedProducts = array();
 
   if (isset($_POST['submit'])){
-    if (
-      isset($_POST['name']) &&
-      isset($_POST['spend-limit']) &&
-      isset($_POST['selected-products'])
-    ){
+    if (isset($_POST['name']) && isset($_POST['spend-limit']) && isset($_POST['selected-products'])) {
       $selectedprodIndex = $_POST['selected-products'];
-      $username = new User($_POST['name'], $_POST['spend-limit']);
+      $selectedProducts = array();
       foreach ($selectedprodIndex as $index => $productIndex) {
         $product = $products[$productIndex];
         $selectedProducts[$index] = $product;
-        $totalPrice += $product->getPrice();
       }
+      $username = new User($_POST['name'], $_POST['spend-limit'], $selectedProducts);
     }
   }
 
@@ -84,15 +77,16 @@
       <div style="text-align: center; margin-top: 10px">
         <?php
           if (!empty($selectedProducts)){
+            $totalPrice = $username->getTotalSpent();
             if ($totalPrice > $username->getSpendLimit()) {
+              echo "You have exceeded your spending limit!<br>";
               echo "Total price: $$totalPrice<br>";
-              echo "Your spending limit: $" . $username->getSpendLimit() . "<br>";
-              echo "User has exceeded its spending limit.<br>";
+              echo "Spending limit: $" . $username->getSpendLimit() . "<br>";
             } else {
               foreach ($selectedProducts as $product) echo $product . "<br>";
               if ($totalPrice != null) echo "<br>Total price: $" . round($totalPrice, 2) . "<br>";
-              echo "User's spending limit: $" . round($username->getSpendLimit(), 2) . "<br>";
-              echo "User's remaining balance: $" . round($username->getSpendLimit() - $totalPrice, 2);
+              echo "Spending limit: $" . round($username->getSpendLimit(), 2) . "<br>";
+              echo "Remaining balance: $" . round($username->getSpendLimit() - $totalPrice, 2);
             }
           }
         ?>
