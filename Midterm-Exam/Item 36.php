@@ -14,19 +14,15 @@
       $this->a = $a;
       $this->b = $b;
     }
-
     function addition() {
       return $this->a + $this->b;
     }
-
     function subtraction() {
       return $this->a - $this->b;
     }
-
     function multiplication() {
       return $this->a * $this->b;
     }
-
     function division() {
       return $this->a / $this->b;
     }
