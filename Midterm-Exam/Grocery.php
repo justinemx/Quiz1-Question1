@@ -29,7 +29,7 @@
       }
 
       public function __toString() {
-        return "$this->name: $" . round($this->price, 2);
+        return "$this->name ($this->weight lb): $" . round($this->price, 2) ;
       }
     }
 

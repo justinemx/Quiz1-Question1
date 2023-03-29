@@ -17,7 +17,7 @@
   );
 
   $username = null;
-  $spendLimit = null;
+  $totalPrice = null;
 
   $selectedProducts = array();
 
@@ -29,7 +29,6 @@
     ){
       $selectedprodIndex = $_POST['selected-products'];
       $username = new User($_POST['name'], $_POST['spend-limit']);
-
       foreach ($selectedprodIndex as $index => $productIndex) {
         $product = $products[$productIndex];
         $selectedProducts[$index] = $product;
