@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equic="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Request</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box form-box">
+        <header>Create Budget Request</header>
+        <form action="" method="post">
+          <div class="field input">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" autocomplete="off" required>
+          </div>
+
+          <div class="body">
+            <div class="inputBox">
+              <span>Body</span>
+              <textarea placeholder="Budget description..."></textarea>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <input type="text" class="text02" readonly placeholder="Organizations">
+            <div class="options">
+              <div onmouseover="show('CEA-CSC')">CEA-CSC</div>
+              <div onmouseover="show('CEA-IECEP')">CEA-IECEP</div>
+              <div onmouseover="show('CEA-ICPEP')">CEA-ICPEP</div>
+            </div>
+          </div>
+
+          <div class="field input">
+            <label for="expense">Expense</label>
+            <input type="text" name="expense" id="expense" autocomplete="off" required>
+          </div>
+
+          <div class="field input">
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount" autocomplete="off" placeholder="&#8369;" required>
+          </div>
+
+          <script>
+            function show(a){
+              document.querySelector('.text02').value = a;
+            }
+
+            let dropdown = document.querySelector('.dropdown');
+            dropdown.onclick = function(){
+              dropdown.classList.toggle('active');
+            }
+          </script>
+          <div class="field">
+            <input type="submit" class="btn" name="submit" value="Submit Request" required>
+          </div>
+          </form>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
