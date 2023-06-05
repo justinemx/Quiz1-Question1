@@ -8,7 +8,7 @@
   }
 
   body{
-    background: whitesmoke;
+    background: #f1f3f4;
     min-height: 100vh;
     overflow-x: hidden;
   }
@@ -22,8 +22,8 @@
     position: fixed;
     width: 300px;
     height: 100%;
-    background: #0066cc;
-    border-left: 10px solid #0066cc;
+    background: #224275;
+    border-left: 10px solid #224275;
     transition: 0.5s;
     overflow: hidden;
   }
@@ -48,7 +48,7 @@
   }
 
   .navigation ul li:hover, .navigation ul li.hovered{
-    background: whitesmoke;
+    background: #f1f3f4;
   }
 
   .navigation ul li:nth-child(1){
@@ -102,7 +102,7 @@
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 35px 35px 0 10px whitesmoke;
+    box-shadow: 35px 35px 0 10px #f1f3f4;
     pointer-events: none;
   }
 
@@ -115,7 +115,7 @@
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 35px -35px 0 10px whitesmoke;
+    box-shadow: 35px -35px 0 10px #f1f3f4;
     pointer-events: none;
   }
 
@@ -125,7 +125,7 @@
     width: calc(100% - 300px);
     left: 300px;
     min-height: 100vh;
-    background: whitesmoke;
+    background: #f1f3f4;
     transition: 0.5s;
   }
 
@@ -183,6 +183,168 @@
     right: 20px;
     font-size: 1.2em;
   }
+
+  .cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+  }
+
+  .cardBox .card{
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.08);
+  }
+
+  .cardBox .card .cardTitle{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #224275;
+  }
+
+  .cardBox .card .cardBody{
+    color: #222222;
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  .cardBox .card:hover{
+    background: gainsboro;
+  }
+
+  .cardBox .card:hover .cardTitle{
+    color: #0693e3;
+  }
+
+  .cardBox .card:hover .cardBody{
+    color: royalblue;
+  }
+
+  .requests{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    /*margin-top: 10px;*/
+  }
+
+  .requests .recentRequests{
+    position: relative;
+    display: grid;
+    background: white;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.08);
+    border-radius: 20px;
+  }
+
+  .cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .cardHeader h2{
+    font-weight: 600;
+    color: #0066cc;
+  }
+
+  .btn{
+    position: relative;
+    padding: 5px 10px;
+    background: #0066cc;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+  }
+
+  .requests table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  .requests table thead td{
+    font-weight: 600;
+  }
+
+  .requests .recentRequests table tr{
+    color: #4d4d4d;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .requests .recentRequests table tr:last-child{
+    border-bottom: none;
+  }
+
+  .requests .recentRequests table tbody tr:hover{
+    background: #0066cc;
+    color: white;
+  }
+
+  .requests .recentRequests table tr td{
+    padding: 10px;
+  }
+
+  .requests .recentRequests table tr td:last-child{
+    text-align: end;
+  }
+
+  .requests .recentRequests table tr td:nth-child(2){
+    text-align: center;
+  }
+
+  .requests .recentRequests table tr td:nth-child(2){
+    text-align: center;
+  }
+
+  .status.processing{
+    padding: 6px 6px;
+    background: #fef3bd;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .status.approved{
+    padding: 6px 6px;
+    background: #7bdcb5;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .status.rejected{
+    padding: 6px 6px;
+    background: #f47373;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .status.completed{
+    padding: 6px 6px;
+    background: #8ed1fc;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
 
 
 
