@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="container">
@@ -47,12 +48,20 @@
           </li>
           <li>
             <a href="#">
+              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+              <span class="title">Admin/User</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
               <span class="title">Logout</span>
             </a>
           </li>
         </ul>
       </div>
+
+
         <!--menu-->
         <div class="main">
           <div class="topbar">
@@ -67,33 +76,10 @@
               </label>
             </div>
           </div>
-          <!--cards-->
-          <div class="cardBox">
-            <div class="card">
-              <div>
-                <div class="cardTitle">Placeholder1</div>
-                <div class="cardBody">Placeholder1 Placeholder1 Placeholder1 Placeholder1</div>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <div class="cardTitle">Placeholder2</div>
-                <div class="cardBody">Placeholder2 Placeholder2 Placeholder2 Placeholder2</div>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <div class="cardTitle">Placeholder3</div>
-                <div class="cardBody">Placeholder3 Placeholder3 Placeholder3 Placeholder3</div>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <div class="cardTitle">Placeholder4</div>
-                <div class="cardBody">Placeholder4 Placeholder4 Placeholder4 Placeholder4</div>
-              </div>
-            </div>
-          </div>
+
+            <button class="create-btn"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+              &nbsp;Create Request
+            </button>
 
           <!--data-->
           <div class="requests">
@@ -140,19 +126,6 @@
                   </tbody>
               </table>
             </div>
-            <!--new-->
-
-            <div class="newRequests">
-              <div class="cardHeader">
-                <h2>Request History</h2>
-              </div>
-              <table>
-                <tr>
-                  <td width=""
-                </tr>
-              </table>
-            </div>
-
 
           </div>
         </div>
