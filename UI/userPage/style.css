@@ -230,9 +230,9 @@ body{
 }
 
 .create-btn{
-  display: block;
+  display: inline-block;
   position: relative;
-  width: 100%;
+  width: 670px;
   padding: 20px 25px;
   font-size: 22px;
   text-align: center;
