@@ -209,119 +209,80 @@
     background-color: #0693e3;
   }
 
-  .requests{
+  .cardBox{
     position: relative;
+    width: 100%;
     padding: 20px;
     display: grid;
-    width: 100%;
-    grid-template-columns: auto;
-    grid-gap: 50px;
   }
 
-.requests .recentRequests{
+  .cardBox .card{
     position: relative;
-    display: grid;
-    width: 100%;
     background: white;
     padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.08);
+    width: 100%;
     border-radius: 20px;
-  }
-
-  .cardHeader{
     display: flex;
+    margin-bottom: 10px;
     justify-content: space-between;
-    align-items: flex-start;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.08);
   }
 
-  .cardHeader h2{
-    font-weight: 600;
-    color: #0066cc;
+  .cardBox .card .cardTitle{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #224275;
   }
 
-  .btn{
+  .cardBox .card .cardBody{
+    color: #222222;
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  .cardBox .card:hover{
+    background: gainsboro;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .cardBox .card:hover .cardTitle{
+    color: #0693e3;
+  }
+
+  .cardBox .card:hover .cardBody{
+    color: royalblue;
+  }
+
+  .card-btn {
+    display: block;
     position: relative;
     padding: 5px 10px;
-    background: #0066cc;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #0066cc;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
     text-decoration: none;
     color: white;
     border-radius: 6px;
+    margin-top: 1em;
   }
 
-  .requests table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  .card-btn span{
+    margin-left: 1rem;
+    transition: 0.2s;
   }
 
-  .requests table thead td{
-    font-weight: 600;
+  .card-btn:hover, .card-btn:active {
+    background-color: #0693e3;
   }
 
-  .requests .recentRequests table tr{
-    color: #4d4d4d;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-
-  .requests .recentRequests table tr:last-child{
-    border-bottom: none;
-  }
-
-  .requests .recentRequests table tbody tr:hover{
-    background: #0066cc;
-    color: white;
-  }
-
-  .requests .recentRequests table tr td{
-    padding: 10px;
-  }
-
-  .requests .recentRequests table tr td:last-child{
-    text-align: end;
-  }
-
-  .requests .recentRequests table tr td:nth-child(2){
-    text-align: center;
-  }
-
-  .requests .recentRequests table tr td:nth-child(2){
-    text-align: center;
-  }
-
-  .status.processing{
-    padding: 6px 6px;
-    background: #fef3bd;
-    color: black;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .status.approved{
-    padding: 6px 6px;
-    background: #7bdcb5;
-    color: black;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .status.rejected{
-    padding: 6px 6px;
-    background: #f47373;
-    color: black;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .status.completed{
-    padding: 6px 6px;
-    background: #8ed1fc;
-    color: black;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
+  .card-btn:hover span, .card-btn:active span {
+    margin-left: 1.5rem;
   }
 
 
