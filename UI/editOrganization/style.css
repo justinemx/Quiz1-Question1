@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Lexend:wght@200;300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend', sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.profile-card .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.text-data .username {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.text-data .role {
+  font-size: 14px;
+  font-weight: 300;
+  height: 30px;
+  background: #0066cc;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  margin-top: 10px;
+  padding: 6px 20px;
+}
+
+.image{
+  position: relative;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background-color: #888888;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.adviser{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid darkgray;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.adviser .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0066cc;
+}
+
+.president{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid darkgray;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.president .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0066cc;
+}
+
+.vice-president{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid darkgray;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.vice-president .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0066cc;
+}
+
+.secretary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid darkgray;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.secretary .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0066cc;
+}
+
+.treasurer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid darkgray;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.treasurer .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0066cc;
+}
+
+.auditor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid darkgray;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.auditor .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0066cc;
+}
+
+.PRO{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid darkgray;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.PRO .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0066cc;
+}
+
+.field{
+  width: 100%;
+}
+
+.field .btn{
+  position: relative;
+  width: 100%;
+  background: #0066cc;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+.btn:hover {
+  background-color: #0693e3;
+}
+
+.submit{
+  width: 100%;
+}
+
+
+

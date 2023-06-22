@@ -55,6 +55,7 @@
     border: 1px solid black;
     outline: none;
   }
+
   .btn{
     height: 40px;
     background: #0066cc;
@@ -68,8 +69,8 @@
     padding: 0 10px;
   }
 
-  .btn hover {
-    opacity: 0.82;
+  .btn:hover {
+    background-color: #0693e3;
   }
 
   .submit{
